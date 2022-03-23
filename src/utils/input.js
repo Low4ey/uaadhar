@@ -7,6 +7,7 @@ export default function Input(props) {
       <TextInput 
           placeholder={props.name}
           onChangeText={props.changeFn}
+          onChange={props.otp}
       />
     </View>
   )
