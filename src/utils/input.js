@@ -6,6 +6,7 @@ export default function Input(props) {
     <View>
       <TextInput 
           placeholder={props.name}
+          onChangeText={props.changeFn}
       />
     </View>
   )
