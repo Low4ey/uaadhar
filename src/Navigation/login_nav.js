@@ -1,15 +1,15 @@
 
 import 'react-native-gesture-handler';
-import Login from '../screens/userLogin';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs'
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-import Agentlogin from '../screens/agentLogin';
-const Tab = createMaterialTopTabNavigator();
+import {Login_nav , Agent_nav} from "./custom_nav"
+const Tab = createBottomTabNavigator();
 
-export default function Login_nav() {
+export default function Login_nav2() {
   return (
      <Tab.Navigator>
-      <Tab.Screen name="User Login" component={Login} />
-      <Tab.Screen name="Agent Login" component={Agentlogin} />
+      <Tab.Screen name="User Login" component={Login_nav} />
+      <Tab.Screen name="Agent Login" component={Agent_nav} />
     </Tab.Navigator>
   );
 }
