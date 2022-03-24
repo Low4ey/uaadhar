@@ -32,7 +32,7 @@ export default function Login({navigation}) {
       <Image
         style={st.logo}
         source={require("../../assets/image/logo.png")} />
-      <Text>login</Text>
+      <Text>User Login</Text>
       <Input
         name="Aadhar No"
         changeFn={(val) => setData(val)}
