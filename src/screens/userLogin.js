@@ -44,12 +44,14 @@ export default function Login({navigation}) {
           <View style={st.textbox1}>
             <Input
             name="Aadhar No"
+            len={12}
             changeFn={(val) => setData(val)} />
           </View>
           <View style={isAadhar?st.textbox2:null}>
             {isAadhar ? 
             <Input 
               name="OTP"
+              len={6}
               changeFn={(val) => setData(val)} /> :
               <Btn
                 title={"Get OTP"}
