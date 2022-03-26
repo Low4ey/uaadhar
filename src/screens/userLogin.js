@@ -1,9 +1,12 @@
-import { Text, StyleSheet, View, Image, Alert, ImageBackground } from 'react-native'
+import { Text, StyleSheet, View, Image, Alert, ImageBackground, Dimensions } from 'react-native'
 import React, { useState } from 'react'
 import Btn from '../utils/button.js'
 import Input from '../utils/input.js'
+import { TextInput } from 'react-native-gesture-handler'
+
 const st = require("../styles/loginst.js")
 const st1 = require("../styles/buttonst.js")
+const windowHeight = Dimensions.get('window').height;
 
 
 export default function Login({navigation}) {
@@ -33,21 +36,18 @@ export default function Login({navigation}) {
       style={st.backgoundImage}
       source={require("../../assets/background.jpg")} >
       <View style={st.body}>
-      <View style={st.shadow}>
-          <Image
+          <Image 
             style={st.logo}
             source={require("../../assets/image/logo.png")} />
       </View>
-      </View>
       <View style={st.BtnPlace}>
-      <View style={st.BtnGrping}>
           <View style={st.textbox1}>
-            <Input 
+            <Input
             name="Aadhar No"
             len={12}
             changeFn={(val) => setData(val)} />
           </View>
-          <View >
+          <View style={isAadhar?st.textbox2:null}>
             {isAadhar ? 
             <Input 
               name="OTP"
@@ -57,10 +57,11 @@ export default function Login({navigation}) {
                 title={"Get OTP"}
                 click={onClick} />}
           </View>
-          </View>
+          <View style={st.Btnlogin}>
           <Btn
             title={"Login"}
             click={onClick2} />
+            </View>
       </View>
       </ImageBackground>
   )

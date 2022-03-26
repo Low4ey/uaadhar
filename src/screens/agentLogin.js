@@ -28,7 +28,9 @@ export default function Agentlogin({navigation}) {
       </View>
       <View style={st1.Btn}>
       <Btn 
-      title="login" />
+      title={"Login"}
+      click={onClick3}
+       />
       </View>
       </View>
     </View>

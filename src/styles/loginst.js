@@ -17,46 +17,35 @@ module.exports = StyleSheet.create({
         height: 140,
         width: 200,
         marginBottom:10,
-        
-    },
-
-    shadow: {
-        shadowColor: "#000",
-        shadowOffset: {
-	        width: 0,
-	        height: 4,
-        },
-        shadowOpacity: 0.32,
-        shadowRadius: 5.46,
-        elevation: 9,
     },
 
     BtnPlace: {
-        position:'relative',
-        bottom: 350,
-        padding: 80,
+        position: 'absolute',
+        padding: 150,
+        top: 100,
+        left: -50,
+
     },
 
     textbox1: {
         backgroundColor:'#F0FFFF',
-        borderRadius: 2,
-        borderColor:'#000000',
         padding: 5,
         margin: 5,
+        width: 200,
     },
 
     textbox2: {
-        marginTop: 10,
+        marginTop: 5,
         padding: 5,
         backgroundColor:'#F0FFFF',
         margin: 5,
     },
 
-    BtnGrping: {
-        marginBottom: 40,
+    BtnPlace2:{
+        margin: 90,
     },
 
-    BtnPlace2:{
-
+    Btnlogin: {
+        marginTop: 30,
     }
 });
