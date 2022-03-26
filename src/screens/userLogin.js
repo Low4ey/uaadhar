@@ -43,6 +43,7 @@ export default function Login({navigation}) {
       <View style={st.BtnPlace}>
           <View style={st.textbox1}>
             <Input
+            ktype="numeric"
             name="Aadhar No"
             len={12}
             changeFn={(val) => setData(val)} />
@@ -50,6 +51,7 @@ export default function Login({navigation}) {
           <View style={isAadhar?st.textbox2:null}>
             {isAadhar ? 
             <Input 
+            ktype="numeric"
               name="OTP"
               len={6}
               changeFn={(val) => setData(val)} /> :
