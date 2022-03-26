@@ -6,6 +6,7 @@ export default function Input(props) {
     <View>
       <TextInput 
           placeholder={props.name}
+          keyboardType="numeric"
           maxLength={props.len}
           onChangeText={props.changeFn}
           onChange={props.otp}
