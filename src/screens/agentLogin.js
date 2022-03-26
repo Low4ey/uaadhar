@@ -19,12 +19,8 @@ export default function Agentlogin({navigation}) {
     <View style={st.body}>
       <Image style={st.logo} 
       source={require("../../assets/image/logo.png")} />
-<<<<<<< Updated upstream
-      <Text>Agent Login</Text>
-=======
       <View style={st.BtnPlace2}>
       <View style={st.textbox1}>
->>>>>>> Stashed changes
       <Input name="Agent ID"/>
       </View>
       <View style={st.textbox2}>
@@ -32,14 +28,9 @@ export default function Agentlogin({navigation}) {
       </View>
       <View style={st1.Btn}>
       <Btn 
-<<<<<<< Updated upstream
-        title="login"
-        click={onClick3} />
-=======
       title="login" />
       </View>
       </View>
->>>>>>> Stashed changes
     </View>
     </ImageBackground>
   )

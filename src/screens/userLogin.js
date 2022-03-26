@@ -29,28 +29,6 @@ export default function Login({navigation}) {
     }
   }
   return (
-<<<<<<< Updated upstream
-    <View>
-      <Image
-        style={st.logo}
-        source={require("../../assets/image/logo.png")} />
-      <Text>User Login</Text>
-      <Input
-        name="Aadhar No"
-        changeFn={(val) => setData(val)}
-      />
-      {isAadhar ? <Input
-        name="OTP"
-        changeFn={(val) => setData(val)}
-      /> :
-      <Btn
-        title={"Get OTP"}
-        click={onClick} />}
-      <Btn
-        title={"Login"}
-        click={onClick2} />
-    </View>
-=======
     <ImageBackground
       style={st.backgoundImage}
       source={require("../../assets/background.jpg")} >
@@ -66,12 +44,14 @@ export default function Login({navigation}) {
           <View style={st.textbox1}>
             <Input 
             name="Aadhar No"
+            len={12}
             changeFn={(val) => setData(val)} />
           </View>
           <View >
             {isAadhar ? 
             <Input 
               name="OTP"
+              len={6}
               changeFn={(val) => setData(val)} /> :
               <Btn
                 title={"Get OTP"}
@@ -83,6 +63,5 @@ export default function Login({navigation}) {
             click={onClick2} />
       </View>
       </ImageBackground>
->>>>>>> Stashed changes
   )
 }
