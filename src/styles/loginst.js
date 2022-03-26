@@ -23,7 +23,7 @@ module.exports = StyleSheet.create({
         position: 'absolute',
         padding: 150,
         top: 100,
-        left: -50,
+        left: -55,
 
     },
 
