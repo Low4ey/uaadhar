@@ -1,8 +1,9 @@
-import { Text, StyleSheet, View, Image, Alert } from 'react-native'
+import { Text, StyleSheet, View, Image, Alert, ImageBackground } from 'react-native'
 import React, { useState } from 'react'
 import Btn from '../utils/button.js'
 import Input from '../utils/input.js'
 const st = require("../styles/loginst.js")
+const st1 = require("../styles/buttonst.js")
 
 
 export default function Login({navigation}) {
@@ -28,6 +29,7 @@ export default function Login({navigation}) {
     }
   }
   return (
+<<<<<<< Updated upstream
     <View>
       <Image
         style={st.logo}
@@ -48,5 +50,39 @@ export default function Login({navigation}) {
         title={"Login"}
         click={onClick2} />
     </View>
+=======
+    <ImageBackground
+      style={st.backgoundImage}
+      source={require("../../assets/background.jpg")} >
+      <View style={st.body}>
+      <View style={st.shadow}>
+          <Image
+            style={st.logo}
+            source={require("../../assets/image/logo.png")} />
+      </View>
+      </View>
+      <View style={st.BtnPlace}>
+      <View style={st.BtnGrping}>
+          <View style={st.textbox1}>
+            <Input 
+            name="Aadhar No"
+            changeFn={(val) => setData(val)} />
+          </View>
+          <View >
+            {isAadhar ? 
+            <Input 
+              name="OTP"
+              changeFn={(val) => setData(val)} /> :
+              <Btn
+                title={"Get OTP"}
+                click={onClick} />}
+          </View>
+          </View>
+          <Btn
+            title={"Login"}
+            click={onClick2} />
+      </View>
+      </ImageBackground>
+>>>>>>> Stashed changes
   )
 }
