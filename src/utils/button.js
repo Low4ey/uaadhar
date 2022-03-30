@@ -1,5 +1,4 @@
-import { Text, Button, View, AppRegistry } from 'react-native'
-import { backgroundColor, color } from 'react-native/Libraries/Components/View/ReactNativeStyleAttributes';
+import { Button, View} from 'react-native'
 
 const st = require("../styles/buttonst.js")
 

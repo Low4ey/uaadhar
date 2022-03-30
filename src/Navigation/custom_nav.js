@@ -1,24 +1,20 @@
 import React from 'react'
-import {createStackNavigator} from '@react-navigation/stack'
-import Home from "../screens/home.js"
-import Login from '../screens/userLogin.js';
-import Agent_home from "../screens/agent_home"
-import Agentlogin from "../screens/agentLogin"
-const stack=createStackNavigator()
+import Home from '../screens/home';
+import Explore from '../screens/explore';
+import  Message  from '../screens/Message';
+import  Profile  from '../screens/Profile';
+import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
+const Tab = createMaterialTopTabNavigator()
 
-const Login_nav=()=>{
-    return(
-    <stack.Navigator>
-    <stack.Screen name="User Login" component={Login} />
-    <stack.Screen name="Home" component={Home}/>
-  </stack.Navigator>)
-}
-const Agent_nav=()=>{
-    return(
-    <stack.Navigator>
-    <stack.Screen name="Agent Login" component={Agentlogin} />
-    <stack.Screen name="Agent Dashboard" component={Agent_home}/>
-  </stack.Navigator>)
+function Main_nav(){
+  return(
+    <Tab.Navigator>
+      <Tab.Screen name="Home" component={Home} />
+      <Tab.Screen name="Explore" component={Explore} />
+      <Tab.Screen name="Message" component={Message} />
+      <Tab.Screen name="Profile" component={Profile} />
+    </Tab.Navigator>
+  );
 }
 
-export {Login_nav , Agent_nav}
+export default Main_nav;

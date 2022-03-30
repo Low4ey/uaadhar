@@ -2,13 +2,9 @@ import { StyleSheet } from 'react-native';
 
 module.exports = StyleSheet.create({
 
-    backgoundImage:{
-        height: '100%' ,
-        width: '100%' ,
-    },
-    
     body: {
-        height: '80%',
+        height: '100%',
+        backgroundColor:"#FD297B",
     },
 
     logo: {
@@ -34,18 +30,16 @@ module.exports = StyleSheet.create({
         width: 200,
     },
 
-    textbox2: {
-        marginTop: 5,
-        padding: 5,
-        backgroundColor:'#F0FFFF',
-        margin: 5,
-    },
-
     BtnPlace2:{
         margin: 90,
     },
 
     Btnlogin: {
         marginTop: 30,
+    },
+    signup:{
+        color:"#0000FF",
+        textDecorationLine:'underline',
+        textDecorationColor:"#0000FF",
     }
 });
